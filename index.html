@@ -597,7 +597,7 @@ footer{background:#0A0806;border-top:1px solid var(--border);padding:44px 64px;d
     <div class="contact-right">
       <div class="form-head">Book Your Free Call</div>
       <p class="form-sub">I'll confirm within 24 hours with a time that works for both of us.</p>
-      <form onsubmit="handleForm(event)">
+      <form action="https://formspree.io/f/xwvwpqvo" method="POST">
         <div class="frow">
           <div class="fg"><label class="fl">Your Name</label><input class="fi" type="text" placeholder="First name" required/></div>
           <div class="fg"><label class="fl">Business Name</label><input class="fi" type="text" placeholder="Your business" required/></div>
@@ -663,21 +663,6 @@ footer{background:#0A0806;border-top:1px solid var(--border);padding:44px 64px;d
     });
   }, {threshold: 0.08});
   document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-
-  function handleForm(e) {
-    e.preventDefault();
-    const btn = e.target.querySelector('.fsub span');
-    const orig = btn.textContent;
-    btn.textContent = "Sent! I'll be in touch within 24 hours ✓";
-    e.target.querySelector('.fsub').style.background = '#2a1a0e';
-    e.target.querySelector('.fsub').style.color = '#C27842';
-    setTimeout(() => {
-      btn.textContent = orig;
-      e.target.querySelector('.fsub').style.background = '';
-      e.target.querySelector('.fsub').style.color = '';
-      e.target.reset();
-    }, 5000);
-  }
 
   const secs = document.querySelectorAll('section[id]');
   const lnks = document.querySelectorAll('.nav-links a');
