@@ -98,20 +98,6 @@ To change the notification email, log into formspree.io and update the form sett
 
 ---
 
-## Custom Domain (Optional)
-
-To use `sebworks.co.za` instead of `sebworks.github.io`:
-
-1. Buy the domain from [Domains.co.za](https://www.domains.co.za)
-2. Go to **Settings → Pages → Custom domain** in this repository
-3. Enter `sebworks.co.za` and click Save
-4. At your domain registrar, add a **CNAME record**:
-   - Name: `www`
-   - Value: `sebworks.github.io`
-5. GitHub will automatically provision an SSL certificate
-
----
-
 ## Contact
 
 **Sebenzile Gabone**
