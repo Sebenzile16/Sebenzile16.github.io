@@ -164,6 +164,32 @@ section{padding:110px 64px}
 .svc-btn.ghost{border:1px solid rgba(194,120,66,0.25);color:var(--copper)}
 .svc-btn.ghost:hover{background:rgba(194,120,66,0.07);transform:translateY(-2px)}
 
+/* PRODUCTS */
+#products{background:var(--card);border-top:1px solid var(--border)}
+.products-intro{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end;margin-bottom:56px}
+.products-intro-right{font-family:var(--ff-serif);font-size:18px;font-weight:300;font-style:italic;color:var(--muted);line-height:1.65;padding-left:36px;border-left:2px solid var(--border2)}
+.products-intro-right em{color:var(--white);font-style:normal}
+.prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
+.prod-card{background:var(--deep);padding:44px 38px;position:relative;overflow:hidden;transition:background 0.3s;display:flex;flex-direction:column}
+.prod-card:hover{background:#161210}
+.prod-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--copper);transform:scaleX(0);transform-origin:left;transition:transform 0.5s}
+.prod-card:hover::before,.prod-card.feat::before{transform:scaleX(1)}
+.prod-card.feat{background:#110E0C;border-left:none}
+.prod-card.feat::before{transform:scaleX(1)}
+.prod-num{font-family:var(--ff-serif);font-size:52px;font-weight:300;color:var(--border2);line-height:1;margin-bottom:14px;transition:color 0.3s}
+.prod-card:hover .prod-num{color:rgba(194,120,66,0.08)}
+.prod-tag{display:inline-block;font-size:9px;font-weight:500;letter-spacing:3px;text-transform:uppercase;padding:5px 12px;margin-bottom:22px;border:1px solid rgba(194,120,66,0.25);color:var(--copper)}
+.prod-card.feat .prod-tag{background:var(--copper);color:var(--black);border-color:var(--copper)}
+.prod-name{font-family:var(--ff-display);font-size:26px;font-weight:400;color:var(--white);line-height:1.2;margin-bottom:14px}
+.prod-desc{font-size:13px;color:var(--muted);font-weight:300;line-height:1.8;margin-bottom:28px;flex:1}
+.prod-format{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:28px;display:flex;align-items:center;gap:10px}
+.prod-format::before{content:'';width:18px;height:1px;background:var(--border2)}
+.prod-btn{font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;display:block;text-align:center;padding:14px;text-decoration:none;transition:all 0.3s;margin-top:auto}
+.prod-btn.solid{background:var(--copper);color:var(--black)}
+.prod-btn.solid:hover{background:var(--copper2);transform:translateY(-2px);box-shadow:0 8px 28px rgba(194,120,66,0.2)}
+.prod-btn.ghost{border:1px solid rgba(194,120,66,0.25);color:var(--copper)}
+.prod-btn.ghost:hover{background:rgba(194,120,66,0.07);transform:translateY(-2px)}
+
 /* LEARN MORE */
 #learn-more{background:var(--black);border-top:1px solid var(--border);padding:80px 64px}
 .learn-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
@@ -286,6 +312,7 @@ footer{background:#0A0806;border-top:1px solid var(--border);padding:44px 64px;d
     <li><a href="#about">About</a></li>
     <li><a href="#journey">The Problem</a></li>
     <li><a href="#services">Work With Me</a></li>
+    <li><a href="#products">Shop</a></li>
     <li><a href="#learn-more">Learn AI</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -527,6 +554,52 @@ footer{background:#0A0806;border-top:1px solid var(--border);padding:44px 64px;d
 </section>
 
 
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="products-intro">
+    <div>
+      <div class="eyebrow reveal">Digital Products</div>
+      <h2 class="sh1 reveal">Learn AI on your<br/><em>own terms.</em></h2>
+      <p class="slead reveal" style="margin-bottom:0">Can't hire me yet? Start here. These guides give you the clarity and tools to start using AI properly — today, on your own.</p>
+    </div>
+    <div class="products-intro-right reveal">
+      "Most people are using AI wrong — not because they're not smart, but because no one showed them <em>how to think about it.</em> These products fix that."
+    </div>
+  </div>
+
+  <div class="prod-grid">
+
+    <div class="prod-card reveal">
+      <div class="prod-num">01</div>
+      <div class="prod-tag">Beginner Guide</div>
+      <div class="prod-name">Use AI Properly</div>
+      <p class="prod-desc">Stop wasting time with trial and error. This guide walks you through exactly how to get real, useful results from AI — no tech background needed. The foundation everyone should start with.</p>
+      <div class="prod-format">Digital Download · PDF Guide</div>
+      <a href="https://sebworksai.gumroad.com/l/use-ai-properly" target="_blank" rel="noopener" class="prod-btn ghost">Get the Guide →</a>
+    </div>
+
+    <div class="prod-card feat reveal">
+      <div class="prod-num">02</div>
+      <div class="prod-tag">Most Popular</div>
+      <div class="prod-name">Learn How to Speak to AI</div>
+      <p class="prod-desc">The words you use with AI change everything. This guide teaches you how to write prompts that actually work — so you get sharp, useful answers instead of vague nonsense. A game-changer for daily work.</p>
+      <div class="prod-format">Digital Download · PDF Guide</div>
+      <a href="https://sebworksai.gumroad.com/l/learn-how-to-speak-to-ai" target="_blank" rel="noopener" class="prod-btn solid">Get the Guide →</a>
+    </div>
+
+    <div class="prod-card reveal">
+      <div class="prod-num">03</div>
+      <div class="prod-tag">For Business Owners</div>
+      <div class="prod-name">Automated Workflows for Biz</div>
+      <p class="prod-desc">A practical, step-by-step guide to identifying and building automated workflows in your business. Real examples, real tools, and a clear process you can follow — even without hiring a consultant.</p>
+      <div class="prod-format">Digital Download · PDF Guide</div>
+      <a href="https://sebworksai.gumroad.com/l/automated-workflows-for-biz" target="_blank" rel="noopener" class="prod-btn ghost">Get the Guide →</a>
+    </div>
+
+  </div>
+</section>
+
+
 <!-- PROCESS -->
 <section id="process">
   <div class="eyebrow reveal">How It Works</div>
@@ -589,7 +662,7 @@ footer{background:#0A0806;border-top:1px solid var(--border);padding:44px 64px;d
       </div>
       <div class="contact-direct">
         <span class="contact-direct-label">Or reach out directly</span>
-        <a href="mailto:sebworks7@gmail.com" class="contact-direct-val">sebworks7@gmail.com</a>
+        <a href="/cdn-cgi/l/email-protection#f5869097829a879e86c2b59298949c99db969a98" class="contact-direct-val"><span class="__cf_email__" data-cfemail="295a4c4b5e465b425a1e694e44484045074a4644">[email&#160;protected]</span></a>
         <span style="font-size:11px;color:var(--muted);margin-top:4px;letter-spacing:1px">Pretoria, South Africa</span>
       </div>
     </div>
@@ -649,13 +722,13 @@ footer{background:#0A0806;border-top:1px solid var(--border);padding:44px 64px;d
     Pretoria, South Africa
   </div>
   <div class="footer-right">
-    <a href="mailto:sebworks7@gmail.com" class="footer-email">sebworks7@gmail.com</a>
+    <a href="/cdn-cgi/l/email-protection#95e6f0f7e2fae7fee6a2d5f2f8f4fcf9bbf6faf8" class="footer-email"><span class="__cf_email__" data-cfemail="f2819790859d809981c5b2959f939b9edc919d9f">[email&#160;protected]</span></a>
     <div class="footer-loc">Pretoria, South Africa</div>
   </div>
 </footer>
 
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   const nav = document.getElementById('nav');
   window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 60));
 
@@ -709,28 +782,4 @@ footer{background:#0A0806;border-top:1px solid var(--border);padding:44px 64px;d
   transition: all 0.3s ease;
 }
 #wa-float:hover {
-  background: #20c25e;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 32px rgba(37,211,102,0.45);
-}
-#wa-float svg {
-  flex-shrink: 0;
-}
-@media (max-width: 600px) {
-  #wa-float {
-    bottom: 20px;
-    right: 20px;
-    padding: 13px 18px;
-    font-size: 12px;
-  }
-  #wa-float span {
-    display: none;
-  }
-  #wa-float {
-    border-radius: 50%;
-    padding: 16px;
-  }
-}
-</style>
-</body>
-</html>
+  background: #20c
