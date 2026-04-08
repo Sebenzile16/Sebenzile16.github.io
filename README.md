@@ -1,6 +1,6 @@
 # SEBWORKS — AI Automation Consulting
 
-> **Live site:** [sebworks.github.io](https://sebworks.github.io)
+> **Live site:** [sebworksai.github.io](https://sebworksai.github.io)
 
 Personal website for **Sebenzile Gabone**, AI Automation Consultant based in Pretoria, South Africa.
 
